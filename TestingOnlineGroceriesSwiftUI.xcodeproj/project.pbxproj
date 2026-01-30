@@ -6,13 +6,33 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		3BC64F7A2F21C337007F0C9D /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 3BC64F792F21C337007F0C9D /* GoogleSignIn */; };
+		3BC64F7C2F21C337007F0C9D /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3BC64F7B2F21C337007F0C9D /* GoogleSignInSwift */; };
+		3BC64F8E2F21CA44007F0C9D /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 3BC64F8D2F21CA44007F0C9D /* FirebaseAuth */; };
+		3BC64FA42F21EE48007F0C9D /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 3BC64FA32F21EE48007F0C9D /* SDWebImageSwiftUI */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		3BC64F582F208966007F0C9D /* TestingOnlineGroceriesSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestingOnlineGroceriesSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		3BC64F802F21C415007F0C9D /* Exceptions for "TestingOnlineGroceriesSwiftUI" folder in "TestingOnlineGroceriesSwiftUI" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 3BC64F572F208966007F0C9D /* TestingOnlineGroceriesSwiftUI */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		3BC64F5A2F208966007F0C9D /* TestingOnlineGroceriesSwiftUI */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				3BC64F802F21C415007F0C9D /* Exceptions for "TestingOnlineGroceriesSwiftUI" folder in "TestingOnlineGroceriesSwiftUI" target */,
+			);
 			path = TestingOnlineGroceriesSwiftUI;
 			sourceTree = "<group>";
 		};
@@ -23,6 +43,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BC64FA42F21EE48007F0C9D /* SDWebImageSwiftUI in Frameworks */,
+				3BC64F7A2F21C337007F0C9D /* GoogleSignIn in Frameworks */,
+				3BC64F8E2F21CA44007F0C9D /* FirebaseAuth in Frameworks */,
+				3BC64F7C2F21C337007F0C9D /* GoogleSignInSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -33,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				3BC64F5A2F208966007F0C9D /* TestingOnlineGroceriesSwiftUI */,
+				3BC64F8C2F21CA44007F0C9D /* Frameworks */,
 				3BC64F592F208966007F0C9D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +68,13 @@
 				3BC64F582F208966007F0C9D /* TestingOnlineGroceriesSwiftUI.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		3BC64F8C2F21CA44007F0C9D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -65,6 +97,10 @@
 			);
 			name = TestingOnlineGroceriesSwiftUI;
 			packageProductDependencies = (
+				3BC64F792F21C337007F0C9D /* GoogleSignIn */,
+				3BC64F7B2F21C337007F0C9D /* GoogleSignInSwift */,
+				3BC64F8D2F21CA44007F0C9D /* FirebaseAuth */,
+				3BC64FA32F21EE48007F0C9D /* SDWebImageSwiftUI */,
 			);
 			productName = TestingOnlineGroceriesSwiftUI;
 			productReference = 3BC64F582F208966007F0C9D /* TestingOnlineGroceriesSwiftUI.app */;
@@ -94,6 +130,11 @@
 			);
 			mainGroup = 3BC64F4F2F208966007F0C9D;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				3BC64F772F21C2EB007F0C9D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				3BC64F782F21C337007F0C9D /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+				3BC64FA22F21EE48007F0C9D /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 3BC64F592F208966007F0C9D /* Products */;
 			projectDirPath = "";
@@ -256,6 +297,7 @@
 				DEVELOPMENT_TEAM = 26662QVGA7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TestingOnlineGroceriesSwiftUI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -266,7 +308,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = None.TestingOnlineGroceriesSwiftUI;
+				PRODUCT_BUNDLE_IDENTIFIER = com.HuyVu.TestingOnlineGroceriesSwiftUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -288,6 +330,7 @@
 				DEVELOPMENT_TEAM = 26662QVGA7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TestingOnlineGroceriesSwiftUI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -298,7 +341,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = None.TestingOnlineGroceriesSwiftUI;
+				PRODUCT_BUNDLE_IDENTIFIER = com.HuyVu.TestingOnlineGroceriesSwiftUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -332,6 +375,56 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3BC64F772F21C2EB007F0C9D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.8.0;
+			};
+		};
+		3BC64F782F21C337007F0C9D /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.1.0;
+			};
+		};
+		3BC64FA22F21EE48007F0C9D /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3BC64F792F21C337007F0C9D /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3BC64F782F21C337007F0C9D /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		3BC64F7B2F21C337007F0C9D /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3BC64F782F21C337007F0C9D /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
+		};
+		3BC64F8D2F21CA44007F0C9D /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3BC64F772F21C2EB007F0C9D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		3BC64FA32F21EE48007F0C9D /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3BC64FA22F21EE48007F0C9D /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3BC64F502F208966007F0C9D /* Project object */;
 }

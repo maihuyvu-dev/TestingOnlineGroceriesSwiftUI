@@ -6,12 +6,28 @@
 //
 
 import SwiftUI
+import FirebaseCore
 
 @main
 struct TestingOnlineGroceriesSwiftUIApp: App {
+    
+    init() {
+        FirebaseApp.configure()
+        print("Firebase đã được cấu hình thành công!")
+    }
+    
+    @StateObject var mainVM = MainViewModel.shared
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            if mainVM.isUserLogin {
+                //HomeView()
+                MainTabView()
+            } else {
+                NavigationStack {
+                    WelcomeView()
+                }
+            }
         }
     }
 }
